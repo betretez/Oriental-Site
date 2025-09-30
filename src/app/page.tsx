@@ -161,7 +161,7 @@ export default function Home() {
             </div>
 
             <div className="mb-10">
-              <div className="text-8xl font-light mb-6 drop-shadow-lg">
+              <div className="flex justify-center mb-6">
 <Circle 
   className={`h-20 w-20 transition-all duration-500 ${
     fastingStatus.isFasting ? 
