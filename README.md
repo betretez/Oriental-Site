@@ -1,6 +1,7 @@
 A modern, responsive web application designed to help the Ethiopian Orthodox Tewahedo Church (EOTC) community track fasting periods and religious holidays. This tool simplifies the complex Ethiopian-Gregorian calendar system, making fasting dates accessible in English and Amharic.
 
-Live Demo
+Live Demo: https://eotcfasting.vercel.app/
+
 Features
 
     Dynamic Fasting Schedule: View current and upcoming fasts (e.g., Abiy Tsome, Tsome Nenewe, Filseta, etc.).
