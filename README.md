@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A modern, responsive web application designed to help the Ethiopian Orthodox Tewahedo Church (EOTC) community track fasting periods and religious holidays. This tool simplifies the complex Ethiopian-Gregorian calendar system, making fasting dates accessible in English and Amharic.
 
-## Getting Started
+Live Demo: https://eotcfasting.vercel.app/
 
-First, run the development server:
+Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    Dynamic Fasting Schedule: View current and upcoming fasts (e.g., Abiy Tsome, Tsome Nenewe, Filseta, etc.).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    Dual Calendar Support: Automatic conversion and display of both Ethiopian and Gregorian dates.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    Weekly Observances: Clear indicators for Wednesday and Friday fasting rules.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Modern UI: A clean, mobile-responsive interface built with Next.js and Tailwind CSS.
 
-## Learn More
+    Zero Config: Always up to date with the liturgical year.
 
-To learn more about Next.js, take a look at the following resources:
+ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Framework: Next.js 15 (App Router)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    Styling: Tailwind CSS
 
-## Deploy on Vercel
+    Language: TypeScript
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Deployment: Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Getting Started
+Prerequisites
+
+    Node.js 18.x or later
+
+    npm, yarn, pnpm, or bun
+
+Installation
+
+    Clone the repository:
+    Bash
+
+    git clone https://github.com/your-username/eotc-fasting.git
+    cd eotc-fasting
+
+    Install dependencies:
+    Bash
+
+    npm install
+
+    Run the development server:
+    Bash
+
+    npm run dev
+
+    Open the app:
+    Navigate to http://localhost:3000 in your browser.
+
+📖 Learn More
+
+To learn more about the project structure or the technologies used:
+
+    Next.js Documentation - learn about Next.js features and API.
+
+    Ethiopian Orthodox Tewahedo Calendar - understand the liturgical rules behind this app.
+
+📄 License
+
+This project is open-source. Feel free to contribute or fork!
