@@ -14,7 +14,7 @@ export default function ChatPage() {
       {
         id: 'welcome',
         role: 'assistant',
-        content: 'Peace be with you. I am here to help answer questions about the Oriental Orthodox faith.',
+        parts: [{ type: 'text', text: 'Peace be with you. I am here to help answer questions about the Oriental Orthodox faith.' }],
       },
     ],
   });
@@ -49,18 +49,12 @@ export default function ChatPage() {
                   : 'bg-white dark:bg-gray-800 shadow-md dark:text-gray-100'
               }`}>
                 <div className="whitespace-pre-wrap">
-                  {/* 3. V6.0 Safe Rendering logic */}
-                  {message.parts ? (
-                    message.parts.map((part, i) => {
-                      if (part.type === 'text') {
-                        return <span key={`${message.id}-${i}`}>{part.text}</span>;
-                      }
-                      return null;
-                    })
-                  ) : (
-                    // Fallback for initialMessages or simple strings
-                    <span>{message.content}</span>
-                  )}
+                  {message.parts.map((part, i) => {
+                    if (part.type === 'text') {
+                      return <span key={`${message.id}-${i}`}>{part.text}</span>;
+                    }
+                    return null;
+                  })}
                 </div>
               </div>
             </div>
