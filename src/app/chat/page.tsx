@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from 'react';
 import { useChat } from '@ai-sdk/react';
+import { DefaultChatTransport, type UIMessage } from 'ai';
 
 export default function ChatPage() {
   const [input, setInput] = useState('');
@@ -9,14 +10,14 @@ export default function ChatPage() {
   // 1. Initializing useChat
   // Ensure your backend 'route.ts' is using .toUIMessageStreamResponse()
   const { messages, sendMessage, status } = useChat({
-    api: '/api/chat',
-    initialMessages: [
+    transport: new DefaultChatTransport({ api: '/api/chat' }),
+    messages: [
       {
         id: 'welcome',
         role: 'assistant',
         parts: [{ type: 'text', text: 'Peace be with you. I am here to help answer questions about the Oriental Orthodox faith.' }],
       },
-    ],
+    ] as UIMessage[],
   });
 
   const isLoading = status === 'streaming' || status === 'submitted';
