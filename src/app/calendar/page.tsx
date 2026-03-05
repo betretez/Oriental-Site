@@ -37,7 +37,7 @@ const FASTING_PERIODS_2025: FastingPeriod[] = [
     amharicName: 'አብይ ጾም',
     startDate: new Date(2026, 1, 16), // Feb 16, 2026 (Monday)
     endDate: new Date(2026, 3, 11), // Apr 11, 2026 (Saturday)
-    description: 'The Great Fast that Our Lord Jesus Christ fasted for 40 days and nights after His baptism. Called "great" because it is the Lord\'s fast and through it Satan\'s temptations are overcome.',
+    description: 'The Great Fast that Our Lord Jesus Christ fasted for 40 days and nights after His baptism. Called "great" because it is the Lord\'s fast and through it satan\'s temptations are overcome.',
     type: 'major',
     duration: 55,
     color: 'bg-red-600',
