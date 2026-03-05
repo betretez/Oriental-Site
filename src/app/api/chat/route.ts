@@ -42,7 +42,7 @@ export async function POST(req: Request) {
       // convertToModelMessages is synchronous and expects only UI messages
       messages: await convertToModelMessages(safeMessages),
       temperature: 0.2,
-      maxTokens: 2000,
+      maxOutputTokens: 2000,
     });
 
     // 4. Use the correct UI stream response
